@@ -1,0 +1,3 @@
+streamlit==1.29.0
+langchain==0.0.353
+pillow==10.1.0
