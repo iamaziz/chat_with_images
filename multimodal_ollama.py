@@ -1,7 +1,5 @@
 import base64
 from io import BytesIO
-
-from IPython.display import HTML, display
 from PIL import Image
 
 
@@ -29,8 +27,9 @@ def plt_img_base64(img_base64):
     """
     # Create an HTML img tag with the base64 string as the source
     image_html = f'<img src="data:image/jpeg;base64,{img_base64}" style="max-width: 100%;"/>'
-    # Display the image by rendering the HTML
     return image_html
+    # To display the image by rendering the HTML
+    # from IPython.display import HTML, display
     # display(HTML(image_html))
 
 
